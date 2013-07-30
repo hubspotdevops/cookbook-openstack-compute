@@ -308,3 +308,9 @@ end
 
 # plugins
 default["openstack"]["compute"]["plugins"] = nil
+
+# Key value generated configs for nova.conf
+# default["openstack"]["compute"]["generic-config"]["some_param"] = some-value
+default["openstack"]["compute"]["generic-config"] = nil
+
+
