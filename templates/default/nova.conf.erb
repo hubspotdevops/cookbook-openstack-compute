@@ -167,3 +167,10 @@ volume_api_class=<%= node["openstack"]["compute"]["config"]["volume_api_class"] 
 osapi_compute_extension=<%= p %>
 <% end %>
 <% end %>
+
+##### ADDITIONAL PARAMETERS #####
+<% if node["openstack"]["compute"]["additional_params"] %>
+<% node["openstack"]["compute"]["additional_params"].each do |key,val| %>
+<%= key %>=<%= val %>
+<% end %>
+<% end %>
