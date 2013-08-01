@@ -147,6 +147,7 @@ default["openstack"]["compute"]["network"]["public_interface"] = "eth0"
 default["openstack"]["compute"]["network"]["vlan_interface"] = "eth0"
 # https://bugs.launchpad.net/nova/+bug/1075859
 default["openstack"]["compute"]["network"]["use_single_default_gateway"] = false
+default["openstack"]["compute"]["network"]["dhcp_domain"] = "novalocal"
 
 default["openstack"]["compute"]["scheduler"]["scheduler_driver"] = "nova.scheduler.filter_scheduler.FilterScheduler"
 default["openstack"]["compute"]["scheduler"]["default_filters"] = [
